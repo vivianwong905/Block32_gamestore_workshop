@@ -8,3 +8,5 @@ const client = new Client({
 });
 
 module.exports = client;
+
+// this connects to the database 

@@ -32,7 +32,7 @@ async function createBoardGame(body) {
     try {
         const { rows: [boardGame] } = await client.query(`
 
-            INSERT INTO boardgames(name, description, price, "inStock", "isPopular", "imgUrl")
+            INSERT INTO boardGames(name, description, price, "inStock", "isPopular", "imgUrl")
             VALUES($1, $2, $3, $4, $5, $6)
             RETURNING *;
         `, [name, description, price, inStock, isPopular, imgUrl]);
