@@ -49,6 +49,7 @@ router.post('/', async (req, res, next) => {
 // PUT - /api/video-games/:id - update a single video game by id
 router.put('/:id', async (req, res, next) => {
     // LOGIC GOES HERE 
+    //find out what update you can do in postman
     //test in postman
     try {
         const videoGame = await updateVideoGame(req.params.id, req.body);
